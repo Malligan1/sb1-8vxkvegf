@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Wrench, Shield } from 'lucide-react';
-import HeroImage from '../../assets/car_1_converted.png';
 
 const HeroSection: React.FC = () => {
   return (
@@ -9,11 +8,21 @@ const HeroSection: React.FC = () => {
       {/* Background Image with Parallax Effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/30 z-10"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10"></div>
+      
+      {/* Desktop Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed brightness-110"
+        className="hidden md:block absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed brightness-110"
         style={{
-          backgroundImage: `url('${HeroImage}')`,
+          backgroundImage: `url('/assets/hero-desktop.jpg')`,
           backgroundAttachment: 'fixed'
+        }}
+      ></div>
+      
+      {/* Mobile Background Image */}
+      <div 
+        className="block md:hidden absolute inset-0 bg-cover bg-center bg-no-repeat brightness-110"
+        style={{
+          backgroundImage: `url('/assets/hero-mobile.jpg')`
         }}
       ></div>
 
