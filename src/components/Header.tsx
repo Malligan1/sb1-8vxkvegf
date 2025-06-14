@@ -47,7 +47,7 @@ const Header: React.FC = () => {
               <img 
                 src={NavbarLogo} 
                 alt="Roo Offroad" 
-                className="h-24 w-auto"
+                className="max-h-24 w-auto object-contain"
               />
             </Link>
           </div>
