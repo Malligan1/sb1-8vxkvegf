@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Wrench, Shield } from 'lucide-react';
 import HeroDesktop from '../../assets/car_1_converted.png';
-import HeroMobile from '../../assets/hero-mobile.jpg';
+import HeroMobile from '../../assets/hero-mobile.jpg.jpg';
 
 const HeroSection: React.FC = () => {
   return (
